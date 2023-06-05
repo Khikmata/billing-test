@@ -25,6 +25,8 @@ const validatePass = (setPasswordError: React.Dispatch<React.SetStateAction<stri
 		return false;
 	}
 
+
+
 	setPasswordError('');
 	return true;
 };

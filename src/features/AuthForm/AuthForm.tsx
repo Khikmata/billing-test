@@ -25,10 +25,12 @@ export const AuthForm = observer(() => {
 	const handlePasswordInput = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setPassword(e.target.value)
 	}
+
+
 	const handleAuth = async (e: React.FormEvent<HTMLButtonElement> | React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		if (validateData({ email, password, setEmailError, setPasswordError })) {
-			AuthFormApi({ email, password, navigate })
+			AuthFormApi({ email, password, navigate, setPasswordError })
 		}
 	}
 

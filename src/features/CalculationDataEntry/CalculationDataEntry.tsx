@@ -8,37 +8,37 @@ export const CalculationDataEntry = observer(() => {
 
 	const [mounted, setMounted] = useState(false);
 
-
-
 	const inputValues = UserInputData.inputValues;
-
 	const setInput = UserInputData.setInput;
 
 	const handleInputChange = (index: number, value: string) => {
 		const newInputValues = [...inputValues];
 		newInputValues[index] = value;
+
+		// Если мы опустошаем инпут - все последующие за ним инпуты исчезают
+		if (value.length === 0 && index < inputValues.length - 1 && index !== 0 && index !== 1) {
+			setInput(newInputValues.slice(0, index + 1));
+			return;
+		}
+
 		setInput(newInputValues);
 
-		// Check if the current input has a value and if so, add a new empty input
+		// Если мы вводим символ в последний инпут - появляется новый
 		if (value.length > 0 && index === inputValues.length - 1) {
-			setInput([...inputValues, '']);
-		}
-		// Check if the current input is cleared and if so, remove the following inputs
-		if (value.length === 0 && index < inputValues.length - 1 && index !== 0 && 1) {
-			setInput(inputValues.slice(0, index + 1));
+			setInput([...newInputValues, '']); // Use the updated newInputValues array
 		}
 	};
 
 	useEffect(() => {
 
 		setMounted(true);
-
 		return () => {
 			setMounted(false)
 		}
 	}, [])
 
 	return (
+
 		<div className={[styles['calculationDataEntry'], styles[mounted ? 'animation' : '']].join(' ')}>
 			{inputValues.map((value, index) => (
 				<div key={index}>

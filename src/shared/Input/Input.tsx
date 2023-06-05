@@ -6,9 +6,8 @@ interface inputProps {
 	changeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
 	type: 'password' | 'text' | 'numeric' | 'email' | 'tel' | 'number';
 	value?: string;
-	register?: any;
-	label?: any;
-	required?: any;
+	label?: string;
+	required?: boolean;
 	pattern?: string;
 }
 
