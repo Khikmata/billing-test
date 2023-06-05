@@ -3,10 +3,14 @@ import UserStore from "app/store/UserStore";
 import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
 import styles from './StepDisplay.module.scss';
+import { capitalizeFirstLetter } from "./helpers/CapitalizeFirstLetter";
 export const StepDisplay = observer(() => {
 
 	const user = UserStore.user
 	const maskedEmail = user && user.email.replace(/(?<=@.{1}).*?(?=\.[^.]*$)/g, (match) => '*'.repeat(match.length));
+
+
+
 	const step = UserCalculationStepStore.step
 
 	const renderTextByStep = () => {
@@ -30,8 +34,10 @@ export const StepDisplay = observer(() => {
 
 	return (
 		<div className={styles['stepdisplay']}>
-			<p>Привет, {maskedEmail}</p>
-			<p className={styles['stepdisplay-state']}>{renderTextByStep()}</p>
+			<p>Привет, {maskedEmail && capitalizeFirstLetter(maskedEmail)}</p>
+			<p className={styles['stepdisplay-state']}>
+				{renderTextByStep()}
+			</p>
 		</div>
 	)
 })

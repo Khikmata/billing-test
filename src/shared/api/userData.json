@@ -34,6 +34,26 @@
       "email": "123@gmail.com",
       "password": "$2a$10$zjr7k8KC./6Ipkg.uUV7jOq1gv7V6nfSbl7vt4N7zSH8UY9zxGfVC",
       "id": 7
+    },
+    {
+      "email": "someone@thatiusedtoknow.com",
+      "password": "$2a$10$i0BQ0ukGbZGwfG09Z5skJe.IG4PkZ8Re9Wzh.UJNxYWR95rr5vXZm",
+      "id": 8
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$ZzEiJQ.f94NP.cAM9CKr2OkhmF05qOiIbhFZB81I9/u.F9ESQMoPy",
+      "id": 9
+    },
+    {
+      "email": "lolmao@lol.com",
+      "password": "$2a$10$Qc0SpRwG0bBgXzglLCw36.X2NCaK89m94BoSg5Mf0DSjmxG1OB3Te",
+      "id": 10
+    },
+    {
+      "email": "testone@gmail.com",
+      "password": "$2a$10$vnxBo9b9fjhMhSBdqk1fW.RvtgGC9ixmQyvqqR0rqu4OHCqA0jOlS",
+      "id": 11
     }
   ]
 }
