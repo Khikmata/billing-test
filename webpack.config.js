@@ -16,7 +16,7 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js'],
 		alias: {
 			app: path.resolve(__dirname, 'src/app/'), // Add aliases for your directories
-			entities: path.resolve(__dirname, 'src/entities/'),
+			entities: path.resolve(__dirname, 'src/entitiesC/'),
 			features: path.resolve(__dirname, 'src/features/'),
 			pages: path.resolve(__dirname, 'src/pages/'),
 			shared: path.resolve(__dirname, 'src/shared/'),

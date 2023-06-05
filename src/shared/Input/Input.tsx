@@ -9,13 +9,14 @@ interface inputProps {
 	label?: string;
 	required?: boolean;
 	pattern?: string;
+	placeHolder?: string;
 }
 
-export const Input: React.FC<inputProps> = ({ label, changeHandler, type, value, required, pattern }) => {
+export const Input: React.FC<inputProps> = ({ label, changeHandler, type, value, required, pattern, placeHolder }) => {
 	return (
 		<>
 			<label>{label}</label>
-			<input className={styles['input']} onChange={changeHandler} type={type} value={value} required={required} pattern={pattern} />
+			<input className={styles['input']} onChange={changeHandler} type={type} value={value} required={required} pattern={pattern} placeholder={placeHolder} />
 		</>
 	)
 }

@@ -15,15 +15,17 @@ export const validateData = ({ setEmailError, setPasswordError, email, password 
 };
 
 const validatePass = (setPasswordError: React.Dispatch<React.SetStateAction<string>>, password: string): boolean => {
-	if (password.length < 5) {
-		setPasswordError('Пароль должен содержать не менее 5 символов');
-		return false;
-	}
 
 	if (!password) {
 		setPasswordError('Заполните поле с паролем');
 		return false;
 	}
+
+	if (password.length < 5) {
+		setPasswordError('Пароль должен содержать не менее 5 символов');
+		return false;
+	}
+
 
 
 
@@ -32,13 +34,15 @@ const validatePass = (setPasswordError: React.Dispatch<React.SetStateAction<stri
 };
 
 const validateLogin = (setEmailError: React.Dispatch<React.SetStateAction<string>>, email: string): boolean => {
-	if (!/\S+@\S+\.\S+/.test(email)) {
-		setEmailError('Некорректный формат логина, логин должен быть в формате почты');
-		return false;
-	}
+
 
 	if (!email) {
 		setEmailError('Заполните поле с логином');
+		return false;
+	}
+
+	if (!/\S+@\S+\.\S+/.test(email)) {
+		setEmailError('Логин должен быть в формате почты. Пример: hello@world.com');
 		return false;
 	}
 

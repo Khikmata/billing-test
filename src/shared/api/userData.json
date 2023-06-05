@@ -14,6 +14,26 @@
       "email": "1@gmai.com",
       "password": "$2a$10$1r2Ek6QFAWfS.xTjwyUzNOMtOJJj3IN6pPH2GCSMHQDb9ElRUEVT2",
       "id": 3
+    },
+    {
+      "email": "1@thereismorethanonesymbol.com",
+      "password": "$2a$10$1v5nykpteTfsixkJBpqhfeBI8yAZZz0pNGFY88PDF3xNwRBx33XMa",
+      "id": 4
+    },
+    {
+      "email": "hello@thereismorethanonesymbol.com",
+      "password": "$2a$10$WlomedAzAmTdfCvo4G5CreYHhdo0tYuGLWLjxMnxrXJX.kgo52Wzq",
+      "id": 5
+    },
+    {
+      "email": "123@gmail.testingout.com",
+      "password": "$2a$10$3FxyrGpI3GXCwsgY1FjwbupNQGKVTdM4QYSzr0YGqW03TXNfHb/bO",
+      "id": 6
+    },
+    {
+      "email": "123@gmail.com",
+      "password": "$2a$10$zjr7k8KC./6Ipkg.uUV7jOq1gv7V6nfSbl7vt4N7zSH8UY9zxGfVC",
+      "id": 7
     }
   ]
 }

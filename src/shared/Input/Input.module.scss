@@ -10,4 +10,7 @@
 
 	border-radius: 4px;
 	color: $font-color;
+	&::placeholder {
+		color: $font-color-half-opacity;
+	}
 }

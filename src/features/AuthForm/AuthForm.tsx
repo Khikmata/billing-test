@@ -34,6 +34,7 @@ export const AuthForm = observer(() => {
 		}
 	}
 
+
 	useEffect(() => {
 		if (validateData({ email, password, setEmailError, setPasswordError })) {
 			setAuthValidated(true)
@@ -48,14 +49,14 @@ export const AuthForm = observer(() => {
 			<p>Авторизация</p>
 			<form className={styles['authform']}>
 
-				<Input label={'Логин'} type='email' value={email} changeHandler={handleEmailInput} />
+				<Input placeHolder={'someone@thatiusedtoknow.com'} label={'Логин'} type='email' value={email} changeHandler={handleEmailInput} />
 
 				{emailError.length > 0 &&
 					<p className='errormessage'>
 						{emailError}
 					</p>
 				}
-				<Input label={'Пароль'} type='password' value={password} changeHandler={handlePasswordInput} />
+				<Input placeHolder={'password123'} label={'Пароль'} type='password' value={password} changeHandler={handlePasswordInput} />
 
 				{passwordError.length > 0 &&
 					<p className='errormessage'>
