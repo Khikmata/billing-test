@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "1@s.ru",
+      "password": "$2a$10$ZUYdoFITUlbCFRVh9SHUAOqmMu0JGK1xsPaSOWI69wW8DZHDSYjqG",
+      "id": 1
+    },
+    {
+      "email": "1@gmail.com",
+      "password": "$2a$10$qIWA0RF9DrW9uMvhQVfXduoejNrXLjXWpOAABv7apmlRLhCuCQjUK",
+      "id": 2
+    },
+    {
+      "email": "1@gmai.com",
+      "password": "$2a$10$1r2Ek6QFAWfS.xTjwyUzNOMtOJJj3IN6pPH2GCSMHQDb9ElRUEVT2",
+      "id": 3
+    }
+  ]
+}

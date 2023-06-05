@@ -1,0 +1,19 @@
+$background: #e6e6e6;
+$color-primary: #303030;
+$color-secondary: #4d4d4d;
+$font-color: #dddddd;
+$accent-color: #3466e4;
+$link-color: #89ff95;
+$button-primary: #21c932;
+$button-primary-hover: #7df12f;
+$button-secondary: #b3aebb;
+$button-secondary-hover: #e2dfe7;
+$button-disabled: #424242;
+@mixin pageDefault {
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

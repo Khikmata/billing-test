@@ -1,0 +1,31 @@
+@import "/src/app/styles/vars.scss";
+
+.button {
+	border: none;
+	border-radius: 4px;
+	height: 36px;
+	cursor: pointer;
+
+	&.primary {
+		background-color: $button-primary;
+		&:hover {
+			background-color: $button-primary-hover;
+		}
+		&:disabled {
+			background-color: $button-disabled;
+		}
+	}
+	&.secondary {
+		background-color: $button-secondary;
+		&:hover {
+			background-color: $button-secondary-hover;
+		}
+		&:disabled {
+			background-color: $button-disabled;
+		}
+	}
+}
+
+.invisible {
+	display: none;
+}

@@ -1,0 +1,19 @@
+@import "/src/app/styles/vars.scss";
+
+.calculationRenderList {
+	width: 260px;
+	padding: 12px;
+	background-color: $color-secondary;
+	margin-bottom: 8px;
+
+	b {
+		margin-right: 8px;
+	}
+
+	&.highligted {
+		color: $button-primary-hover;
+		b {
+			color: $font-color;
+		}
+	}
+}

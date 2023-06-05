@@ -1,5 +1,5 @@
 {
-  "name": "billing-test",
+  "name": "calculate-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,17 +10,21 @@
     "@types/node": "^16.18.34",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
+    "axios": "^1.4.0",
+    "mobx": "^6.9.0",
+    "mobx-react-lite": "^3.4.3",
+    "nanoid": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack",
+    "build-prod": "webpack --mode=production",
+    "server": "json-server-auth --watch ./src/shared/api/userData.json --port 5001"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +43,28 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-react": "^7.22.3",
+    "@types/compose-function": "^0.0.30",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "css-modules-typescript-loader": "^4.0.1",
+    "file-loader": "^6.2.0",
+    "json-server": "^0.17.3",
+    "json-server-auth": "^2.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "minify": "^10.2.0",
+    "postcss-loader": "^7.3.2",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.1",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.3",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.3"
   }
 }

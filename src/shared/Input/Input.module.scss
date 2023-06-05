@@ -1,0 +1,13 @@
+@import "/src/app/styles/vars.scss";
+.input {
+	height: 24px;
+	width: 100%;
+
+	background-color: $color-secondary;
+	border: none;
+
+	padding: 4px;
+
+	border-radius: 4px;
+	color: $font-color;
+}

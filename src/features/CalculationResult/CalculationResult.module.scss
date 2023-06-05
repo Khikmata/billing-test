@@ -1,0 +1,17 @@
+@import "/src/app/styles/vars.scss";
+
+.calculationResult {
+	opacity: 0;
+	&.animation {
+		animation: show 0.5s linear forwards;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

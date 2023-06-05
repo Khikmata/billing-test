@@ -1,0 +1,1 @@
+export { GreetingBlock } from './GreetingBlock';

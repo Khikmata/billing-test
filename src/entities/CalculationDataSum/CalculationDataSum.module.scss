@@ -1,0 +1,10 @@
+@import "/src/app/styles/vars.scss";
+.calculationDataSum {
+	width: 260px;
+	padding: 12px;
+	background-color: $color-secondary;
+	margin-bottom: 12px;
+	&-result {
+		color: $button-primary-hover;
+	}
+}

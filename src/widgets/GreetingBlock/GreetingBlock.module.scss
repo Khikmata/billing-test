@@ -1,0 +1,12 @@
+.greeting-block-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 500px;
+}
+.greeting-block-action {
+	display: flex;
+	justify-content: flex-end;
+	width: 80%;
+}

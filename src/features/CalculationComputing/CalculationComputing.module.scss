@@ -1,0 +1,36 @@
+@import "/src/app/styles/vars.scss";
+
+.calculationComputing {
+	&-animation {
+		animation: show 0.5s linear;
+	}
+
+	&-text {
+		animation: text-anim 1.2s linear infinite;
+	}
+}
+
+@keyframes text-anim {
+	0% {
+		color: $font-color;
+	}
+	50% {
+		color: $color-secondary;
+	}
+	100% {
+		color: $font-color;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+p {
+	margin-top: 12px;
+}

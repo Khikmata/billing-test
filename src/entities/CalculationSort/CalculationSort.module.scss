@@ -1,0 +1,27 @@
+@import "/src/app/styles/vars.scss";
+
+.calculationSort {
+	position: relative;
+	margin-bottom: 8px;
+	&-display {
+		cursor: pointer;
+		color: $button-primary-hover;
+	}
+	&-modal {
+		position: absolute;
+		right: 12px;
+		li {
+			padding: 4px;
+			background-color: $color-primary;
+			color: $font-color;
+			list-style: none;
+			margin-bottom: 8px;
+			width: 100px;
+			cursor: pointer;
+			&:hover {
+				background-color: $font-color;
+				color: $color-primary;
+			}
+		}
+	}
+}
