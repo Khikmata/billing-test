@@ -16,6 +16,7 @@ export const CalculationDataEntry = observer(() => {
 		newInputValues[index] = value;
 
 		// Если мы опустошаем инпут - все последующие за ним инпуты исчезают
+		// Исключение - первые 2 инпута, которые обязательны.
 		if (value.length === 0 && index < inputValues.length - 1 && index !== 0 && index !== 1) {
 			setInput(newInputValues.slice(0, index + 1));
 			return;
