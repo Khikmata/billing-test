@@ -1,5 +1,4 @@
 
-# Тестовое задание
 
 ## Технический стек:
 `React, typescript, react-router-dom, mobX`
